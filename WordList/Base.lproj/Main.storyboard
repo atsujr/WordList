@@ -160,7 +160,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="一覧" id="j4A-ga-4le">
-                        <barButtonItem key="leftBarButtonItem" title="戻る" id="yQ6-bG-l2z"/>
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="yQ6-bG-l2z">
+                            <connections>
+                                <segue destination="GcX-ed-6BA" kind="unwind" unwindAction="backWithSender:" id="0hq-ik-aIm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mMs-ND-GQs">
                             <connections>
                                 <segue destination="gFm-dn-G9e" kind="show" id="DVI-us-mPV"/>
@@ -169,6 +173,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hq-7o-j6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GcX-ed-6BA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1092.753623188406" y="790.84821428571422"/>
         </scene>
